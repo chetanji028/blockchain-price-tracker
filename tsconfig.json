@@ -1,0 +1,10 @@
+{
+    "compilerOptions": {
+      "experimentalDecorators": true,
+      "emitDecoratorMetadata": true,
+      "moduleResolution": "node", // Ensures Node-style module resolution
+    "esModuleInterop": true, // Ensures interop between CommonJS and ES modules
+      "target": "ES6",
+      
+    }
+  }

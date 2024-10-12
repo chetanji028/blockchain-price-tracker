@@ -1,0 +1,27 @@
+version: '3.8'
+services:
+  blockchain-tracker:
+    build: .
+    ports:
+      - "3000:3000"
+    environment:
+      - POSTGRES_HOST=db
+      - POSTGRES_PORT=5432
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=postgres
+      - POSTGRES_DB=blockchain_price_tracker
+    depends_on:
+      - db
+  db:
+    image: postgres
+    environment:
+      POSTGRES_DB: blockchain_price_tracker
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+    ports:
+      - "5432:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+
+volumes:
+  pgdata:
