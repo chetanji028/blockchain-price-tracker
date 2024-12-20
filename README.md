@@ -35,7 +35,7 @@ Follow these steps to get your development environment set up:
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/blockchain-price-tracker.git
+   git clone https://github.com/chetanji028/blockchain-price-tracker.git
 
 2.cd blockchain-price-tracker
 
